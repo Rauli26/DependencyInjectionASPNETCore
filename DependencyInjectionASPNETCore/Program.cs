@@ -7,6 +7,7 @@ builder.Services.AddControllersWithViews();
 
 //Register Services to our Container as a Scoped
 // Configure both Interface and the implementation, because you can create a Interface and have many class implementng that interface.
+//Transient objects are always different; a new instance is provided to every controller and every service.
 // AddScoped -> How long active instance of service will be available, For example when you make http request this EmailSenderService will
 // get used and when you make new http request there will be new EmailSenderService
 //Sigleton -> It will get shared between the request
